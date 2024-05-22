@@ -7,7 +7,7 @@
 var text = '';
 
 text += 'MediaSource: ' + window.MediaSource;
-text += 'MediaSource.isTypeSupported: ' + typeof MediaSource.isTypeSupported;
+text += window.MediaSource ? ('MediaSource.isTypeSupported: ' + typeof window.MediaSource.isTypeSupported) : '';
 
 document.querySelector('#output').innerHTML = text;
 
