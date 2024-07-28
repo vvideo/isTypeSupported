@@ -1,6 +1,7 @@
 <html>
 <body>
 <div id="output"></div>
+<div id="output-orientation"></div>
 
 <script>
   
@@ -10,6 +11,7 @@ text += 'MediaSource: ' + window.MediaSource;
 text += window.MediaSource ? ('MediaSource.isTypeSupported: ' + typeof window.MediaSource.isTypeSupported) : '';
 
 document.querySelector('#output').innerHTML = text;
+document.querySelector('#output-orientation').innerHTML = window.screen.orientation;
 
 </script>
 
