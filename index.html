@@ -11,7 +11,7 @@ text += 'MediaSource: ' + window.MediaSource;
 text += window.MediaSource ? ('MediaSource.isTypeSupported: ' + typeof window.MediaSource.isTypeSupported) : '';
 
 document.querySelector('#output').innerHTML = text;
-document.querySelector('#output-orientation').innerHTML = window.screen.orientation;
+document.querySelector('#output-orientation').innerHTML = 'window.orientation: ' + window.orientation;
 
 </script>
 
